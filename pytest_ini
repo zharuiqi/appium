@@ -1,0 +1,16 @@
+[pytest]
+# 测试报告命令 pytest -s -q --alluredir report_xml
+# allure generate report_xml -o report_html
+
+
+# 添加命令行参数
+addopts = -s
+# 文件搜索路径
+testpaths = ./scripts
+# 文件名称
+python_files = test_*.py
+# 类名称
+python_class = Test*
+# 方法名称
+python_functions = test_*
+
